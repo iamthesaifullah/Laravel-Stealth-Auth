@@ -1,0 +1,25 @@
+{
+    "name": "yourvendor/laravel-stealth-auth",
+    "description": "Token-based one-time authentication for Laravel.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "StealthAuth\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.0",
+        "illuminate/support": "^9|^10|^11"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "StealthAuth\\StealthAuthServiceProvider"
+            ],
+            "aliases": {
+                "StealthAuth": "StealthAuth\\Facades\\StealthAuth"
+            }
+        }
+    }
+}
